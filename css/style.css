@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #e8e9e9;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+img {
+	object-fit: cover;
+	width: 550px;
+	height: 400px;
+	overflow: hidden;
+}
+button, input[type="submit"], {
+	margin-top: 1em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+}
+input {
+	margin-top: 10px;
+}
+a {
+	text-decoration: none;
+	background: #3db5da;
+	color: white;
+	padding: 5px 5px;
+	margin: 5px 0px;
+}
+nav {
+	padding: 25px 0 15px 0;
+	text-align: center;
+}
+#container {
+	background-color: white;
+	padding: 10px;
+	margin: 0 auto;
+	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+#container, .adminImgContainer {
+	width: 80vw;
+	height: 95vh;
+}
+#imgHolder {
+	border-radius: 5px;
+	border: 7px solid white;
+	box-shadow: 0 0 0 6px #e8e9e9;
+}
+#uploadFormContainer {
+	display: flex;
+	justify-content: space-around;
+}
+#uploadForm {
+	flex: 1;
+}
+#uploadForm h2 {
+	text-align: center;
+}
+#slideshow {
+	position: relative;
+	width: 550px;
+}
+#nextPic, #prevPic {
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	background: #000;
+	background: rgba(0,0,0, .6);
+	top: 50%;
+	z-index: 4;
+	font-size: 1.5em;
+	margin-top: -1.2em;
+	opacity: .3;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#imgCaptDate {
+	color: white;
+	position: absolute;
+	background: black;
+	background: rgba(0,0,0, .8);
+	bottom: 11px;
+	z-index: 4;
+	font-size: 1em;
+	margin-top: -1.2em;
+	opacity: .6;
+	padding: 5px;
+}
+#imgCaptDate, #prevPic {
+	left: 7px;
+	border-top-right-radius: 3px;
+}
+#nextPic {
+	right: 7px;
+	border-top-left-radius: 3px;
+	padding: 10px 5px 15px 10px;
+	border-bottom-left-radius: 3px;
+}
+#prevPic {
+	padding: 10px 10px 15px 5px;
+	border-bottom-right-radius: 3px;
+}
+#nextPic:hover, #prevPic:hover {
+	background: rgba(0,0,0,1);
+	opacity: .4;
+}
+.adminImgContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: hidden;
+	margin-left: -10px;
+}
+.picAdmin img {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.picAdmin [type="submit"] {
+	font-size: 1em;
+	border: none;
+}
+.picAdmin [type="submit"], .fileContainer {
+	background: #3db5da;
+	color: white;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 5px;
+}
+.inputAlign {
+	width: 15vw;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.inputAlign [type="text"] {
+	font-size: 1em;
+}
+.fileContainer {
+	font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file], .fileContainer [type=submit] {
+    cursor: pointer;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    margin: 30px 0;
+}
+.slideshowContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
